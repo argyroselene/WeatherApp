@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="rootPane" prefHeight="578.0" prefWidth="584.0" styleClass="root-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WeatherController">
+
+
+    <!-- Top Bar -->
+    <top>
+        <HBox alignment="CENTER" prefHeight="62.0" prefWidth="584.0" spacing="10" styleClass="top-bar">
+            <TextField fx:id="cityField" prefWidth="200" promptText="Enter city..." styleClass="text-field" />
+            <Button fx:id="searchButton" styleClass="button" text="Search" />
+            <Button fx:id="myLocationButton" styleClass="button" text="My Location" />
+            <ToggleButton fx:id="modeToggle" styleClass="toggle-button" text="Dark Mode" />
+            <ProgressIndicator fx:id="loadingIndicator" prefHeight="25" prefWidth="25" visible="false" />
+        </HBox>
+    </top>
+   <bottom>
+        <ScrollPane fitToWidth="true" prefHeight="554.0" prefWidth="584.0" styleClass="scroll-pane" BorderPane.alignment="CENTER">
+            <VBox alignment="TOP_CENTER" prefHeight="532.0" prefWidth="582.0" spacing="20" styleClass="main-vbox">
+
+                <!-- Current Weather Card -->
+                <VBox fx:id="weatherBox" alignment="CENTER" maxWidth="400" prefWidth="350" spacing="12" styleClass="weather-box">
+    <Label fx:id="locationLabel" styleClass="location-label" text="City, Country" />
+    <Label fx:id="temperatureLabel" styleClass="temperature-label" text="25°C" />
+    <Label fx:id="conditionLabel" styleClass="condition-label" text="Sunny ☀" />
+    <Label fx:id="detailsLabel" styleClass="details-label" text="Feels like 27°C | Humidity 60% | Wind 12 km/h" textAlignment="CENTER" wrapText="true" />
+    <Label fx:id="feelsLikeLabel" styleClass="details-label" text="Feels like 27°C" />
+    <Label fx:id="humidityLabel" styleClass="details-label" text="Humidity 60%" />
+    <Label fx:id="cloudCoverageLabel" styleClass="details-label" text="Cloud coverage 20%" />
+    <Label fx:id="precipitationLabel" styleClass="details-label" text="Precipitation 10 mm" />
+    <Label fx:id="timeLabel" styleClass="details-label" text="Local time 12:00" />
+    <Label fx:id="aqiLabel" styleClass="details-label" text="AQI 45" />
+    <ImageView fx:id="currentWeatherIcon" fitHeight="80" fitWidth="80" />
+</VBox>
+
+
+                <!-- 3-Day Forecast -->
+                <Label fx:id="forecastTitle" styleClass="section-title" text="3-Day Forecast" />
+                <HBox fx:id="forecastBox" alignment="CENTER" spacing="5" />
+
+                <!-- Last 7 Days History -->
+                <Label fx:id="historyTitle" styleClass="section-title" text="Last 7 Days" />
+                <HBox fx:id="historyBox" alignment="CENTER" prefWidth="582.0" spacing="5" />
+
+            </VBox>
+        </ScrollPane>
+   </bottom>
+
+</BorderPane>

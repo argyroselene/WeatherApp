@@ -1,0 +1,45 @@
+.root-pane {
+    -fx-background-color: #2c2c2c;
+}
+
+.scroll-pane {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+}
+
+.weather-box {
+    -fx-background-color: rgba(50,50,50,0.85);
+    -fx-background-radius: 20;
+    -fx-padding: 25;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 15, 0.3, 0, 5);
+}
+
+/* Labels etc remain same */
+.location-label { -fx-text-fill: white; -fx-font-size:20px; -fx-font-weight:bold; }
+.temperature-label { -fx-text-fill: white; -fx-font-size:50px; -fx-font-weight:bold; }
+.condition-label { -fx-text-fill: white; -fx-font-size:20px; }
+.details-label { -fx-text-fill: white; -fx-font-size:14px; }
+.section-title { -fx-text-fill: white; -fx-font-size:16px; -fx-font-weight:bold; }
+.forecast-label, .history-label { -fx-text-fill: white; }
+
+/* Top bar styling */
+.top-bar {
+    -fx-background-color: transparent;
+}
+.mini-weather-card {
+    -fx-background-color: rgba(50,50,50,0.85);
+    -fx-padding: 10;
+    -fx-alignment: CENTER;
+    -fx-spacing: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0.2, 0, 3);
+}
+
+.mini-weather-card-label {
+    -fx-text-fill: white;
+}
+.mini-weather-icon {
+    -fx-fit-width: 40;
+    -fx-fit-height: 40;
+}
+
+

@@ -1,0 +1,48 @@
+.root-pane {
+    -fx-background-color: linear-gradient(to bottom, #87CEFA, #4682B4);
+}
+
+.scroll-pane {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+}
+
+/* Weather box and labels for light mode */
+.weather-box {
+    -fx-background-color: rgba(255,255,255,0.85);
+    -fx-background-radius: 20;
+    -fx-padding: 25;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 15, 0.3, 0, 5);
+}
+
+.location-label { -fx-text-fill: black; -fx-font-size:20px; -fx-font-weight:bold; }
+.temperature-label { -fx-text-fill: black; -fx-font-size:50px; -fx-font-weight:bold; }
+.condition-label { -fx-text-fill: black; -fx-font-size:20px; }
+.details-label { -fx-text-fill: black; -fx-font-size:14px; }
+.section-title { -fx-text-fill: black; -fx-font-size:16px; -fx-font-weight:bold; }
+.forecast-label, .history-label { -fx-text-fill: black; }
+
+/* Top bar styling */
+.top-bar {
+    -fx-background-color: transparent;
+}
+/* Mini weather cards */
+.mini-weather-card {
+    -fx-background-radius: 15;
+    -fx-padding: 10;
+    -fx-alignment: CENTER;
+    -fx-spacing: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.2, 0, 3);
+    -fx-background-color: rgba(255,255,255,0.85); /* light mode default */
+}
+
+.mini-weather-card-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: black;
+}
+
+.mini-weather-icon {
+    -fx-fit-width: 40;
+    -fx-fit-height: 40;
+}
+
