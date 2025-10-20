@@ -11,7 +11,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class WeatherService {
-    private static final String WEATHER_API_KEY = "44009cb57823429b84e173127252008";
+    private static final String WEATHER_API_KEY = "YOUR_API_KEY";
 
     private static String fetch(String urlStr) throws Exception {
         URL url = new URL(urlStr);
@@ -77,3 +77,4 @@ public class WeatherService {
     }
 
 }
+
