@@ -9,7 +9,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class LocationService {
-    private static final String POSITIONSTACK_API_KEY = "d0225cf92ab53d88069d06b395c86e48";
+    private static final String POSITIONSTACK_API_KEY = "YOUR_API_KEY";
 
     // for searching getting coordinates
     public static double[] getCoordinates(String city) {
@@ -68,3 +68,4 @@ public class LocationService {
         return null; // if it fails
     }
 }
+
